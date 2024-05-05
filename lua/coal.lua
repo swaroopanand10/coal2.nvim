@@ -97,7 +97,7 @@ function M.setup(config)
 		Search = groups.search_selection,
 		Substitute = groups.search_selection,
 
-		MatchParen = groups.search_selection,
+		MatchParen = {fg = '#FF9E64', bg = 'none'},
 
 		ModeMsg = groups.brighter,
 		MoreMsg = groups.brighter,
@@ -159,7 +159,7 @@ function M.setup(config)
 		SpecialChar = groups.brighter,
 		Statement = groups.medium,
 		StorageClass = groups.brighter,
-		String = groups.brighter_italic,
+		String = groups.brighter,
 		Structure = groups.brighter,
 		Tag = groups.medium,
 		Todo = groups.brightest,
@@ -207,7 +207,7 @@ function M.setup(config)
 		TSPunctSpecial = groups.darker,
 		TSRepeat = groups.darker,
 		TSStorageClass = groups.medium,
-		TSString = groups.brighter_italic,
+		TSString = groups.brighter,
 		TSStringRegex = groups.brighter,
 		TSStringEscape = groups.medium,
 		TSStringSpecial = groups.medium,
@@ -236,7 +236,7 @@ function M.setup(config)
 		TSTypeQualifier = groups.darker_italic,
 		TSTypeDefinition = groups.medium,
 		TSVariable = groups.medium_italic,
-		TSVariableBuiltin = groups.medium,
+		TSVariableBuiltin = groups.medium_italic,
 
 		-- Diff
 		DiffAdd = { bg = palette.background.brighter },
@@ -259,7 +259,7 @@ function M.setup(config)
 		netrwMarkFile = { bg = palette.background.brightest },
 
 		-- LSP inlay hints
-		LSPInlayHint = { fg = colors.gray },
+		LSPInlayHint = { fg = '#545C7E', bg = 'none' },
 	}
 
 	for group, set in pairs(higlight_groups) do
