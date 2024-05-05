@@ -80,6 +80,7 @@ function M.setup(config)
 		medium_underline = { fg = palette.foreground.medium, em = "underline" },
 		brighter = { fg = palette.foreground.brighter },
 		brighter_italic = { fg = palette.foreground.brighter, em = "italic" },
+		brighter_bold = { fg = palette.foreground.brighter, em = "bold" },
 		brightest = { fg = palette.foreground.brightest, em = "none" },
 		brightest_bold = { fg = palette.foreground.brightest, em = "bold" },
 	}
@@ -186,7 +187,7 @@ function M.setup(config)
 		TSField = groups.medium,
 		TSFloat = groups.brighter,
 		TSFunction = groups.brighter_italic,
-		TSFuncBuiltin = groups.brighter,
+		TSFuncBuiltin = groups.brighter_italic,
 		TSFuncMacro = groups.brighter,
 		TSInclude = groups.darker,
 		TSKeyword = groups.dimmed,
@@ -244,6 +245,12 @@ function M.setup(config)
     ["@variable.builtin"] = groups.medium_bold,
 		["@variable.parameter"] = groups.medium_italic,
 		["@variable.member"] = groups.medium,
+
+ 		["@function"] = groups.brighter,
+		["@function.builtin"] = groups.brighter_bold,
+		["@function.macro"] = { link = "Function" },
+		["@function.method"] = groups.brighter,
+		["@function.method.call"] = groups.brighter,
 
 		-- Diff
 		DiffAdd = { bg = palette.background.brighter },
