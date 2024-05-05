@@ -253,16 +253,24 @@ function M.setup(config)
 		["@function.method.call"] = groups.brighter,
 
 		-- Diff
-		DiffAdd = { bg = palette.background.brighter },
-		DiffAdded = { fg = palette.foreground.medium },
+		-- DiffAdd = { bg = palette.background.brighter },
+		-- DiffAdded = { fg = palette.foreground.medium },
+		--
+		-- DiffDelete = { fg = palette.background.brighter, bg = palette.background.brighter },
+		-- DiffRemoved = { fg = palette.foreground.darker },
+		--
+		-- DiffChange = { bg = palette.background.brighter },
+		-- DiffText = { fg = palette.background.medium, bg = palette.foreground.darker, em = "bold" },
+		--
+		-- DiffLine = { fg = palette.foreground.darker },
 
-		DiffDelete = { fg = palette.background.brighter, bg = palette.background.brighter },
-		DiffRemoved = { fg = palette.foreground.darker },
-
-		DiffChange = { bg = palette.background.brighter },
-		DiffText = { fg = palette.background.medium, bg = palette.foreground.darker, em = "bold" },
-
-		DiffLine = { fg = palette.foreground.darker },
+		DiffAdd = { bg = '#273849', blend = 20 },
+		DiffChange = { bg = '#252af3', blend = 20 },
+		DiffDelete = { bg = '#3a273a', blend = 20 },
+		DiffText = { bg = '#394b70', blend = 20 },
+		diffAdded = { link = "DiffAdd" },
+		diffChanged = { link = "DiffChange" },
+		diffRemoved = { link = "DiffDelete" },
 
 		-- Telescope
 		TelescopeSelectionCaret = { bg = palette.background.brightest },
