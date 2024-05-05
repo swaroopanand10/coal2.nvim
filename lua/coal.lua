@@ -142,6 +142,7 @@ function M.setup(config)
 		Comment = groups.darker_italic,
 		Conditional = groups.dimmed,
 		Constant = groups.brighter,
+		Variable = groups.medium_italic,
 		Define = groups.darker,
 		Delimiter = groups.darker,
 		Float = groups.brighter,
