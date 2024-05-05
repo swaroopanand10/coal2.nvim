@@ -260,6 +260,9 @@ function M.setup(config)
 
 		-- LSP inlay hints
 		LSPInlayHint = { fg = '#545C7E', bg = 'none' },
+
+    -- Nvim flash
+    FlashLabel =  { fg = '#ffffff', bg = '#ff007c', bold = true },
 	}
 
 	for group, set in pairs(higlight_groups) do
