@@ -46,8 +46,8 @@ function M.setup(config)
 			background = colors.dark_charcoal,
 		},
 		search_selection = {
-			foreground = colors.search_blue,
-			background = colors.gray,
+			foreground = colors.white,
+			background = colors.search_blue,
 		},
 		background = {
 			medium = colors.smoky_black,
