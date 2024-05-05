@@ -265,12 +265,15 @@ function M.setup(config)
 		-- DiffLine = { fg = palette.foreground.darker },
 
 		DiffAdd = { bg = '#273849', blend = 20 },
-		DiffChange = { bg = '#252af3', blend = 20 },
+		DiffChange = { bg = '#252a33', blend = 20 },
 		DiffDelete = { bg = '#3a273a', blend = 20 },
 		DiffText = { bg = '#394b70', blend = 20 },
-		diffAdded = { fg = '#b8dbf7' },
-		diffChanged = { fg = "#7ca1f2" },
-		diffRemoved = { fg = "#e26a75" },
+		diffAdded = { link = "DiffAdd" },
+		diffChanged = { link = "DiffChange" },
+		diffRemoved = { link = "DiffDelete" },
+		-- diffAdded = { fg = '#b8dbf7' },
+		-- diffChanged = { fg = "#7ca1f2" },
+		-- diffRemoved = { fg = "#e26a75" },
 
 		-- Telescope
 		TelescopeSelectionCaret = { bg = palette.background.brightest },
