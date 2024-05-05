@@ -41,7 +41,7 @@ function M.setup(config)
 			foreground = colors.smoky_black,
 			background = colors.anti_flash_white,
 		},
-		ligher_selection = {
+		lighter_selection = {
 			foreground = colors.white,
 			background = colors.dark_charcoal,
 		},
@@ -67,8 +67,8 @@ function M.setup(config)
 	local groups = {
 		normal = { fg = palette.foreground.medium, bg = palette.background.medium },
 		selection = { fg = palette.selection.foreground, bg = palette.selection.background },
-		ligher_selection = { fg = palette.ligher_selection.foreground, bg = palette.ligher_selection.background },
-
+		lighter_selection = { fg = palette.lighter_selection.foreground, bg = palette.lighter_selection.background },
+		search_selection = { fg = palette.search_selection.foreground, bg = palette.search_selection.background },
 		darkest = { fg = palette.foreground.darkest },
 		darker = { fg = palette.foreground.darker },
 		darker_italic = { fg = palette.foreground.darker, em = "italic" },
@@ -89,7 +89,7 @@ function M.setup(config)
 		Italic = { em = "italic" },
 		Underlined = { em = "underline" },
 
-		Visual = groups.ligher_selection,
+		Visual = groups.lighter_selection,
 
 		Directory = groups.brighter,
 
@@ -119,7 +119,7 @@ function M.setup(config)
 		TabLineSel = { fg = palette.foreground.medium },
 
 		Pmenu = { fg = palette.foreground.medium, bg = palette.background.brightest },
-		PmenuSel = groups.ligher_selection,
+		PmenuSel = groups.lighter_selection,
 		PmenuSbar = { bg = palette.background.brightest },
 
 		Conceal = groups.darker,
