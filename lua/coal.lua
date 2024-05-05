@@ -28,6 +28,7 @@ function M.setup(config)
 		raisin_black = cc.raisin_black or "#262626",
 
 		dark_charcoal = cc.dark_charcoal or "#303030",
+    search_blue = '#3E68D7',
 		gray = cc.gray or "#7E7E7E",
 		quick_silver = cc.quick_silver or "#A5A5A5",
 		chinese_silver = cc.chinese_silver or "#CCCCCC",
@@ -43,6 +44,10 @@ function M.setup(config)
 		ligher_selection = {
 			foreground = colors.white,
 			background = colors.dark_charcoal,
+		},
+		search_selection = {
+			foreground = colors.search_blue,
+			background = colors.gray,
 		},
 		background = {
 			medium = colors.smoky_black,
@@ -88,11 +93,11 @@ function M.setup(config)
 
 		Directory = groups.brighter,
 
-		IncSearch = groups.ligher_selection,
-		Search = groups.ligher_selection,
-		Substitute = groups.ligher_selection,
+		IncSearch = groups.search_selection,
+		Search = groups.search_selection,
+		Substitute = groups.search_selection,
 
-		MatchParen = groups.ligher_selection,
+		MatchParen = groups.search_selection,
 
 		ModeMsg = groups.brighter,
 		MoreMsg = groups.brighter,
