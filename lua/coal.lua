@@ -88,11 +88,11 @@ function M.setup(config)
 
 		Directory = groups.brighter,
 
-		IncSearch = groups.selection,
-		Search = groups.selection,
-		Substitute = groups.selection,
+		IncSearch = groups.ligher_selection,
+		Search = groups.ligher_selection,
+		Substitute = groups.ligher_selection,
 
-		MatchParen = groups.selection,
+		MatchParen = groups.ligher_selection,
 
 		ModeMsg = groups.brighter,
 		MoreMsg = groups.brighter,
@@ -114,7 +114,7 @@ function M.setup(config)
 		TabLineSel = { fg = palette.foreground.medium },
 
 		Pmenu = { fg = palette.foreground.medium, bg = palette.background.brightest },
-		PmenuSel = groups.selection,
+		PmenuSel = groups.ligher_selection,
 		PmenuSbar = { bg = palette.background.brightest },
 
 		Conceal = groups.darker,
