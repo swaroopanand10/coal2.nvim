@@ -76,6 +76,7 @@ function M.setup(config)
 		dimmed_italic = { fg = palette.foreground.dimmed, em = "italic" },
 		medium = { fg = palette.foreground.medium },
 		medium_italic = { fg = palette.foreground.medium, em = "italic" },
+		medium_bold = { fg = palette.foreground.medium, em = "bold" },
 		medium_underline = { fg = palette.foreground.medium, em = "underline" },
 		brighter = { fg = palette.foreground.brighter },
 		brighter_italic = { fg = palette.foreground.brighter, em = "italic" },
@@ -97,7 +98,7 @@ function M.setup(config)
 		Search = groups.search_selection,
 		Substitute = groups.search_selection,
 
-		MatchParen = {fg = '#FF9E64', bg = 'none'},
+		MatchParen = { fg = "#FF9E64", bg = "none" },
 
 		ModeMsg = groups.brighter,
 		MoreMsg = groups.brighter,
@@ -233,10 +234,16 @@ function M.setup(config)
 		TSTodo = groups.brightest,
 		TSType = groups.medium,
 		TSTypeBuiltin = groups.medium,
-		TSTypeQualifier = groups.darker_italic,
+		TSTypeQualifier = groups.darker,
 		TSTypeDefinition = groups.medium,
 		TSVariable = groups.medium_italic,
 		TSVariableBuiltin = groups.medium_italic,
+
+		-- Sementic
+		["@variable"] = groups.medium_italic,
+    ["@variable.builtin"] = groups.medium_bold,
+		["@variable.parameter"] = groups.medium_italic,
+		["@variable.member"] = groups.medium,
 
 		-- Diff
 		DiffAdd = { bg = palette.background.brighter },
@@ -259,10 +266,10 @@ function M.setup(config)
 		netrwMarkFile = { bg = palette.background.brightest },
 
 		-- LSP inlay hints
-		LSPInlayHint = { fg = '#545C7E', bg = 'none' },
+		LSPInlayHint = { fg = "#545C7E", bg = "none" },
 
-    -- Nvim flash
-    FlashLabel =  { fg = '#ffffff', bg = '#ff007c', bold = true },
+		-- Nvim flash
+		FlashLabel = { fg = "#ffffff", bg = "#ff007c", bold = true },
 	}
 
 	for group, set in pairs(higlight_groups) do
