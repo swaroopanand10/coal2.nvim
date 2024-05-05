@@ -28,8 +28,8 @@ function M.setup(config)
 		raisin_black = cc.raisin_black or "#262626",
 
 		dark_charcoal = cc.dark_charcoal or "#303030",
-    search_blue = '#3E68D7',
-		gray = cc.gray or "#7E7E7E",
+		search_blue = "#3E68D7",
+		gray = "#7E7E7E",
 		quick_silver = cc.quick_silver or "#A5A5A5",
 		chinese_silver = cc.chinese_silver or "#CCCCCC",
 		anti_flash_white = cc.anti_flash_white or "#F2F2F2",
@@ -256,6 +256,9 @@ function M.setup(config)
 
 		-- Netrw
 		netrwMarkFile = { bg = palette.background.brightest },
+
+		-- LSP inlay hints
+		LSPInlayHint = { fg = colors.gray },
 	}
 
 	for group, set in pairs(higlight_groups) do
