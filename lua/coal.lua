@@ -91,7 +91,7 @@ function M.setup(config)
 		Italic = { em = "italic" },
 		Underlined = { em = "underline" },
 
-		Visual = groups.lighter_selection,
+		Visual = groups.search_selection,
 
 		Directory = groups.brighter,
 
